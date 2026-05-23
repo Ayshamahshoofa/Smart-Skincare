@@ -113,7 +113,7 @@ Open the `index.html` file in your browser.
 
 ## 📸 Screenshots
 
-![splashscfreen].(assets/spalshscreen.png)
+![splashscfreen].(assets/splashscreen.png)
 ![Home Page](assets/homepage.png)
 
 ![Analysis Result](assets/result.png)
