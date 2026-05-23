@@ -111,12 +111,7 @@ python app.py
 
 Open the `index.html` file in your browser.
 
-## 📸 Screenshots
 
-![splashscfreen].(assets/splashscreen.png)
-![Home Page](assets/homepage.png)
-
-![Analysis Result](assets/result.png)
 ## 📊 Future Enhancements
 
 - Advanced skin condition detection
