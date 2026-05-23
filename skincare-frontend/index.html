@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Driven Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌸 Splash Screen -->
+  <div id="splash-screen">
+    <h1>Data Driven Beauty</h1>
+    <p>Unleashing Deep Learning in Skincare</p>
+  </div>
+
+  <!-- 🌿 Main Content -->
+  <div id="main-content" style="display:none;">
+    <section class="hero">
+      <h1>Welcome to Data Driven Beauty</h1>
+      <p>Reveal your natural glow with AI-powered skincare analysis</p>
+    </section>
+
+    <!-- 🎥 Webcam + Upload Section -->
+    <section class="webcam">
+      <h2>Capture or Upload Image</h2>
+
+      <!-- Webcam -->
+      <video id="video" autoplay></video>
+      <button id="capture">📸 Capture</button>
+
+      <!-- Upload -->
+      <label for="upload" class="upload-btn">📁 Choose File</label>
+      <input type="file" id="upload" accept="image/*" style="display:none;" />
+      <span id="file-name">No file chosen</span>
+
+      <!-- Image Preview -->
+      <img id="uploaded-preview" src="" alt="Uploaded Preview"
+           style="display:none; margin-top:15px; border-radius:10px; max-width:250px;" />
+
+      <!-- Canvas & Captured Preview -->
+      <canvas id="canvas" style="display:none;"></canvas>
+      <img id="captured-image" src="" alt="Captured Image" style="display:none;" />
+
+      <!-- Analyze Button -->
+      <button id="analyze-button">🔍 Analyze</button>
+    </section>
+
+    <!-- 💡 Result Section -->
+    <section class="analysis">
+      <h2>Analysis Result</h2>
+      <p id="result">Upload or capture an image to see results.</p>
+      <ul id="recommendations" style="margin-top:10px;"></ul>
+
+    </section>
+
+    <!-- 💬 About Us -->
+    <section id="about-us">
+      <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+          At Data-Driven Beauty, we believe skincare should be personalized, precise, 
+          and accessible to everyone. Our mission is to harness AI to analyze your 
+          skin health and provide expert recommendations tailored to you.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

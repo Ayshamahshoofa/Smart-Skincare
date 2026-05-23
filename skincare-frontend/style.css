@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Splash Screen */
+#splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  text-align: center;
+  animation: fadeOut 2s ease 2s forwards;
+}
+
+#splash-screen h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#splash-screen p {
+  font-size: 1.2rem;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: #ffe8f1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Webcam Section */
+.webcam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+video {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button#capture,
+button#analyze-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff1493;
+}
+
+#captured-image {
+  margin-top: 20px;
+  width: 300px;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Analysis Section */
+.analysis {
+  padding: 40px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+/* About Us */
+#about-us {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: justify;
+  border-top: 5px solid #4CAF50;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+/* Upload button style */
+.upload-btn {
+  background: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+.upload-btn:hover {
+  background: #ff1493;
+}
+
+#file-name {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+#uploaded-preview {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #ff69b4;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 105, 180, 0.3);
+}
